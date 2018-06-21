@@ -1,0 +1,31 @@
+{
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.autoFixOnSave": true, // 每次保存的时候将代码按eslint格式进行修复
+  "eslint.alwaysShowStatus": true,
+  "prettier.disableLanguages": ["js"],
+  "files.autoSave": "onFocusChange",
+
+
+  // "eslint.enable": true,
+  // prettier进行格式化时是否安装eslint配置去执行，建议false
+  // "prettier.eslintIntegration": true,
+
+  // "editor.formatOnSave": true
+
+
+
+  // "files.autoSave": "onFocusChange"
+  // "editor.formatOnType": true,
+  // "javascript.format.enable": false,
+  // "prettier.eslintIntegration": true,
+
+  "stylusSupremacy.insertColons": false, // 是否插入冒号
+  "stylusSupremacy.insertSemicolons": false, // 是否插入分好
+  "stylusSupremacy.insertBraces": false, // 是否插入大括号
+  "stylusSupremacy.insertNewLineAroundImports": false, // import之后是否换行
+  "stylusSupremacy.insertNewLineAroundBlocks": true, // 两个选择器中是否换行
+  "editor.tabSize": 2,
+}

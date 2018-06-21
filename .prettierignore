@@ -1,0 +1,6 @@
+src/registerServiceWorker.js
+src/App.test.js
+scripts/*.js
+node_modules/**
+config/**
+

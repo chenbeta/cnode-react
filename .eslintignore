@@ -1,0 +1,9 @@
+src/registerServiceWorker.js
+src/App.test.js
+scripts/*.js
+node_modules/**
+config/**
+
+package.json
+
+prettier.config.js
