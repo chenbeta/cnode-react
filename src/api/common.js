@@ -67,6 +67,35 @@ const newReplies = (topicId, data) =>
  */
 const getUserData = name => HP.get(`/user/${name}`);
 
+/**
+ *  消息通知
+ *
+ * @param {*} data
+ */
+const getMsgCount = data => HP.get('/message/count', data);
+
+/**
+ *  取已读和未读消息
+ *
+ * @param {*} data
+ */
+const getMsg = data => HP.get('/messages', data);
+
+/**
+ *  标记全部已读
+ *
+ * @param {*} data
+ */
+const markMsgAll = data => HP.post('/message/mark_all', data);
+
+/**
+ *  标记单个消息为已读
+ *
+ * @param {*} msgId
+ * @param {*} data
+ */
+const markMsgOne = (msgId, data) => HP.post(`/message/mark_one/${msgId}`, data);
+
 export default {
   getTopics,
   getTopicDetails,
@@ -76,5 +105,9 @@ export default {
   delCollectTopic,
   getCollectTopic,
   newReplies,
-  getUserData
+  getUserData,
+  getMsgCount,
+  getMsg,
+  markMsgAll,
+  markMsgOne
 };

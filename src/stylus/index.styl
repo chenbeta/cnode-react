@@ -1,4 +1,30 @@
+@import './var.styl'
+
 :global
-  p
+  ul, p, pre
     padding 0
     margin 0
+
+  li
+    list-style none
+
+  .f-l
+    float left
+
+  .f-r
+    float right
+
+  .clearfix
+    zoom 1
+
+    &:after
+      content ''
+      clear both
+      height 0
+      line-height 0
+      display block
+      visibility hidden
+
+  .container
+    margin auto
+    width $body-width
